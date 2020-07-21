@@ -1,0 +1,9 @@
+.NavBar {
+    &.navbar-dark .navbar-nav .nav-link {
+        color: white !important;
+    }
+    .navbar-brand {
+        font-family: cursive;
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,49 @@
+.LandingPage {
+    .wallpaper {
+        width: 100%;
+        opacity: .25;
+        height: 400px;
+    }
+    .tagline {
+        position: relative;
+        top: -378px;
+        width: 100%;
+        font-family: monospace;
+        text-align: center;
+        font-weight: bolder;
+        line-height: 1em;
+        font-size: 30px;
+        color: black;
+    }
+    .description {
+        position: relative;
+        width: 100%;
+        font-family: monospace;
+        text-align: center;
+        font-weight: bolder;
+        line-height: 1em;
+        font-size: 20px;
+        color: black;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .description {
+            top: -360px;
+            font-size: 20px;
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .description {
+            top: -360px;
+            font-size: 20px;
+        }
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .description {
+            top: -330px;
+            font-size: 20px;
+        }
+    }
+}

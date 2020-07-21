@@ -1,0 +1,19 @@
+<div class="featuredProducts">
+    <p class="featuredProducts__title">Featured Products</p>
+    <div class="featuredProducts__list">
+        <div class="featuredProduct" *ngFor="let featuredProduct of featuredProducts; let i=index; trackBy: trackById">
+
+            <div class="featuredProduct__image">
+                <img alt="Save up to 35% on Microsoft Surface Pro X" src="https://www.amazon.com/images/I/71WPXY5GhgL._AC_SL1500__AA210_.jpg" role="img">
+            </div>
+            <div class="featuredProduct__name">
+            </div>
+            <div class="featuredProduct__price">
+                <span class="setPrice"></span>
+                <span class="listPrice"></span>
+            </div>
+            <div class="detailsAction">
+                <button type="button" class="detailsAction__btn">Details</button>
+            </div>
+        </div>
+    </div>
