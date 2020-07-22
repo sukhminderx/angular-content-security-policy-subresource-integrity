@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+    script-src self *.jquery.com nonce-dummyNonce http://localhost:4200;
+    style-src 'unsafe-inline' *">
     <title>Ecomx</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
