@@ -1,6 +1,7 @@
 # Contect Security policy and sub resource integrity
 
+## must have
+<meta name="nonce" content="fhawqowqoh4349sfslfws">
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Approach
+gets all script and style tags; gets nonce from meta tag; append the nonce to the scripts and styles
