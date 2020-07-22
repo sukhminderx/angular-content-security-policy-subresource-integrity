@@ -3,13 +3,15 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import { appendNonce } from './appendNonce';
+import { appendNonce, addLibs } from './appendNonce';
 
 if (environment.production) {
   enableProdMode();
 }
 
-appendNonce();
+appendNonce(); // not useful with scripts loaded by bundler
+
+addLibs(); // useful to add 3rd party scripts
 
 document.addEventListener('DOMContentLoaded', () => {
   platformBrowserDynamic().bootstrapModule(AppModule)
