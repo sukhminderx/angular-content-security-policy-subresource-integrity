@@ -21,5 +21,5 @@ function getMeta(metaName) {
       }
     }
   
-    return '' || 'dummyNonce'; // workaround as meta nonce is not present when ng is build
+    return ''; // workaround as meta nonce is not present when ng is build
   }
